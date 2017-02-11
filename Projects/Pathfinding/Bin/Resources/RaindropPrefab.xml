@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<GameObject uuid="eebe689a-61ad-42af-94ae-8185b5555d45" name="RainDrop">
+	<Components>
+		<Component class="Transform">
+			<Position x="0" y="0"/>
+			<Rotation a="0"/>
+			<Scale x="1" y="1"/>
+		</Component>	
+		<Component class="RainDrop">
+			<TextureUID uuid="346d0a29-0588-4837-92bd-fd08f65fedb7" />
+			<MinSpeed x="0" y="20"/>
+			<MaxSpeed x="0" y="100"/>
+		</Component>	
+	</Components>
+</GameObject>

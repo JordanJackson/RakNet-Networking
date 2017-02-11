@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameEngine", "..\..\..\Engine\GameEngine\GameEngine.vcxproj", "{44ADACE5-C5BB-4BA1-AE34-5AC03CA2CAC0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7E65F16A-51D5-4285-98A5-D434D06716DF} = {7E65F16A-51D5-4285-98A5-D434D06716DF}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameEngine.ExternalLibs", "..\..\..\Engine\GameEngine.ExternalLibs\GameEngine.ExternalLibs.vcxproj", "{7E65F16A-51D5-4285-98A5-D434D06716DF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pathfinding", "Pathfinding\Pathfinding.vcxproj", "{9765963E-F2E3-4DCC-8F13-7510E9604D62}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7E65F16A-51D5-4285-98A5-D434D06716DF} = {7E65F16A-51D5-4285-98A5-D434D06716DF}
+		{44ADACE5-C5BB-4BA1-AE34-5AC03CA2CAC0} = {44ADACE5-C5BB-4BA1-AE34-5AC03CA2CAC0}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44ADACE5-C5BB-4BA1-AE34-5AC03CA2CAC0}.Debug|x86.ActiveCfg = Debug|Win32
+		{44ADACE5-C5BB-4BA1-AE34-5AC03CA2CAC0}.Debug|x86.Build.0 = Debug|Win32
+		{44ADACE5-C5BB-4BA1-AE34-5AC03CA2CAC0}.Release|x86.ActiveCfg = Release|Win32
+		{44ADACE5-C5BB-4BA1-AE34-5AC03CA2CAC0}.Release|x86.Build.0 = Release|Win32
+		{7E65F16A-51D5-4285-98A5-D434D06716DF}.Debug|x86.ActiveCfg = Debug|Win32
+		{7E65F16A-51D5-4285-98A5-D434D06716DF}.Debug|x86.Build.0 = Debug|Win32
+		{7E65F16A-51D5-4285-98A5-D434D06716DF}.Release|x86.ActiveCfg = Release|Win32
+		{7E65F16A-51D5-4285-98A5-D434D06716DF}.Release|x86.Build.0 = Release|Win32
+		{9765963E-F2E3-4DCC-8F13-7510E9604D62}.Debug|x86.ActiveCfg = Debug|Win32
+		{9765963E-F2E3-4DCC-8F13-7510E9604D62}.Debug|x86.Build.0 = Debug|Win32
+		{9765963E-F2E3-4DCC-8F13-7510E9604D62}.Release|x86.ActiveCfg = Release|Win32
+		{9765963E-F2E3-4DCC-8F13-7510E9604D62}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
